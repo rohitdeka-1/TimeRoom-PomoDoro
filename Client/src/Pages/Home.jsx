@@ -9,8 +9,8 @@ const Home = () => {
       <div>
         <NavBar />
         <div className="pt-20 bg-gradient-to-b from-black via-[#0f1e28] to-[#1a3a5d] min-h-screen">
-          <div className="flex lg:mt-36 mt-24 flex-col md:flex-row items-center justify-around text-left md:text-left px-6 md:px-20">
-            <div className="font-fugaz flex flex-col text-5xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl space-y-3 md:space-y-6 mb-8 md:mb-0">
+          <div className="flex lg:mt-48 mt-24 flex-col md:flex-row items-center justify-around text-left md:text-left px-6 md:px-20">
+            <div className="font-fugaz text-white flex flex-col text-5xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl space-y-3 md:space-y-6 mb-8 md:mb-0">
               <h1>SUPERCHARGED</h1>
               <h1>COLLABORATIVE</h1>
               {/* <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl"> */}
@@ -26,10 +26,10 @@ const Home = () => {
               />
             </div>
           </div>
-          <div className=" mt-14 font-Cal text-2xl flex md:flex-row md:justify-center  md:space-x-10 flex-col items-center gap-5 ">
+          <div className="lg:hidden mt-14 font-Cal text-2xl flex md:flex-row md:justify-center  md:space-x-10 flex-col items-center gap-5 ">
             <Link to={"/login"}>
               <div className="text-white p-4 px-24 rounded-xl bg-blue-400">
-                <a>Login</a>
+                Login
               </div>
             </Link>
             <Link to={"/register"}>
@@ -39,7 +39,6 @@ const Home = () => {
             </Link>
           </div>
         </div>
-        
       </div>
     </>
   );
