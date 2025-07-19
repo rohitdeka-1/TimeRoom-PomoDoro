@@ -1,38 +1,39 @@
-import Joi from "joi"; // Correct import with capital 'J'
+import Joi from "joi";  
 
-const signupValidation = (req, res, next) => {
-    const schema = Joi.object({ // Correct usage of Joi (capital 'J')
-        name: Joi.string().min(3).max(12).required(),
+export const signupValidation = (req, res, next) => {
+    const schema = Joi.object({  
+        username: Joi.string().min(3).max(12).required(),
         email: Joi.string().email().required(),
         password: Joi.string().min(4).required()
     });
-
-    const { error } = schema.validate(req.body); // Fixed typo
+    
+    const { error } = schema.validate(req.body);  
     if (error) {
+       
         return res.status(400).json({
             message: "Bad Request",
-            error: error.details[0].message // Improved error detail
+            error: error.details[0].message 
         });
     }
 
     next();
 };
 
-const loginValidation = (req, res, next) => {
-    const schema = Joi.object({ // Correct usage of Joi
-        email: Joi.string().email().required(),
+export const loginValidation = (req, res, next) => {
+    const schema = Joi.object({ 
+        identity: Joi.string().required(),
         password: Joi.string().min(4).required()
     });
 
-    const { error } = schema.validate(req.body); // Fixed typo
+    const { error } = schema.validate(req.body); 
     if (error) {
         return res.status(400).json({
             message: "Bad Request",
-            error: error.details[0].message // Improved error detail
+            error: error.details[0].message  
         });
     }
 
     next();
 };
 
-export { signupValidation, loginValidation };
+ 

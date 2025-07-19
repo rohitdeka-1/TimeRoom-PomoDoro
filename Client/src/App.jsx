@@ -6,6 +6,7 @@ import Login from "./Pages/Login";
 import Register from "./Pages/Register";
 import FirstSetup from "./Pages/FirstSetup";
 import TimeRoom from "./Pages/TimeRoom";
+import SessionStarted from "./Pages/SessionStarted";
  
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
         <Route path="/register" element={<Register/>} />
         <Route path="/firstsetup" element={<FirstSetup/>} />
         <Route path="/timeroom" element={<TimeRoom/>} />
+        <Route path="/session" element={<SessionStarted/>} />
       </Routes>
     </>
   )
