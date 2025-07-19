@@ -15,7 +15,6 @@ export const signupValidation = (req, res, next) => {
             error: error.details[0].message 
         });
     }
-
     next();
 };
 

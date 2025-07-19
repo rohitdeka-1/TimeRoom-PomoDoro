@@ -6,6 +6,8 @@ const envConfig = {
     MONGO_URI: process.env.MONGO_URI,
     ACCESS_TOKEN: process.env.ACCESS_TOKEN,
     REFRESH_TOKEN: process.env.REFRESH_TOKEN, 
+    GOOGLE_APP_GMAIL: process.env.GOOGLE_APP_GMAIL,
+    GOOGLE_APP_PASSWORD: process.env.GOOGLE_APP_PASSWORD
 }
 
 export default envConfig;

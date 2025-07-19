@@ -5,4 +5,6 @@
     POST /rooms/:id/pause
     GET /rooms/:id/status (time left, current state)
     Socket events: timer-sync, timer-control, etc.
- */
+*/
+
+

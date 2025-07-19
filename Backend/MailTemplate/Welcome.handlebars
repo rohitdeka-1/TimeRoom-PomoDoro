@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Welcome to TimeRoom</title>
+      <!-- FiguaZ-like font (Manrope used here as a visually similar modern fallback) -->
+     <link href="https://fonts.googleapis.com/css2?family=Fugaz+One&display=swap" rel="stylesheet">
+
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: 'fugaf', sans-serif;
+        background-color: #000;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+      }
+
+      .title-text {
+        font-size: 2.5rem;
+        font-family:'Fugaz One', sans-serif;
+        font-weight: 700;
+        background: linear-gradient(90deg, #000, #000);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        letter-spacing: 2px;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        text-align: center;
+        text-transform: uppercase;
+      }
+    </style>
+  </head>
+</head>
+
+<body style="margin:0; padding:0; background-color:#f4f4f7; font-family: 'Segoe UI', 'Roboto', sans-serif; color:#333;">
+  <table width="100%" cellpadding="0" cellspacing="0" style="background-color:#f4f4f7; padding: 20px 0;">
+    <tr>
+      <td align="center">
+        <table width="100%" cellpadding="0" cellspacing="0" style="max-width:520px; background:#ffffff; border-radius:10px; box-shadow:0 4px 14px rgba(0,0,0,0.08); overflow:hidden;">
+          
+          <!-- Header / Logo -->
+          <tr>
+            <td align="center" style="padding:32px 24px 16px 24px;">
+              {{!-- <img src="https://res.cloudinary.com/doejdsmym/image/upload/v1752961883/Screenshot_2025-07-20_031808_yqtzir.png" alt="TimeRoom Logo" width="80" height="80" style="border-radius:10%; margin-bottom:12px;" /> --}}
+                <div class="title-text">TimeRoom</div>
+              <h1 style="margin:0; font-size:24px; font-weight:600; color:#2d2d2d;">Welcome, {{username}}!</h1>
+            </td>
+          </tr>
+
+          <!-- Body Content -->
+          <tr>
+            <td align="center" style="padding:0 24px 16px 24px;">
+              <p style="font-size:16px; color:#555; line-height:1.5; margin:0 0 16px 0;">
+                We're thrilled to have you join <strong>TimeRoom</strong> — your new space for focused, collaborative work.
+              </p>
+              <p style="font-size:15px; color:#666; line-height:1.5; margin:0 0 24px 0;">
+                Dive into productivity with real-time Pomodoro sessions, room collaboration, and more.
+              </p>
+              <a href="https://your-app-url.com/login"
+                 style="display:inline-block; padding:12px 28px; background:#000; color:#fff; border-radius:6px; font-size:15px; font-weight:600; text-decoration:none;">
+                Get Started
+              </a>
+            </td>
+          </tr>
+
+          <!-- Footer -->
+          <tr>
+            <td align="center" style="padding:24px 24px 32px 24px;">
+              <p style="font-size:13px; color:#999; margin:0;">
+                Have any questions? Just reply to this email — we’re happy to help.
+              </p>
+              <p style="font-size:13px; color:#aaa; margin:6px 0 0 0;">&copy; {{year}} TimeRoom. All rights reserved.</p>
+            </td>
+          </tr>
+          
+        </table>
+      </td>
+    </tr>
+  </table>
+</body>
+</html>
