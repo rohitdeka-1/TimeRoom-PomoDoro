@@ -6,7 +6,6 @@ import path from "path";
 const router = Router();
 
 
- 
 //handlebars
 const hbsOptions = {
     viewEngine: {
@@ -14,6 +13,7 @@ const hbsOptions = {
     },
     viewPath: path.resolve("MailTemplate")
 }
+
 
 transporter.use('compile',hbs(hbsOptions))
 router.use("/auth",authRoute)
