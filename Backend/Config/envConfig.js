@@ -2,6 +2,7 @@ import dotenv from "dotenv";
 dotenv.config();
 
 const envConfig = {
+    FRONTEND: process.env.FRONT_END,
     PORT: process.env.PORT || 8020,
     MONGO_URI: process.env.MONGO_URI,
     ACCESS_TOKEN: process.env.ACCESS_TOKEN,
