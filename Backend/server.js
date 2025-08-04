@@ -13,7 +13,8 @@ dotenv.config();
 const app = express();
 const PORT = envConfig.PORT;
 const server = createServer(app);
-const io = connectToSocket(server,{
+
+export const io = connectToSocket(server,{
     cors:{
         methods:["POST","GET"],
         origin:["http://localhost:5173"]

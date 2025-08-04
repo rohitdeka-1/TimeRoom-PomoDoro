@@ -8,9 +8,8 @@ export const verifyJWT = async (req, res, next) => {
 
 
     const authHeader = req.headers['authorization'];
-    console.log(authHeader);
     const token = authHeader && authHeader.split(' ')[1];
-    console.log(token);
+ 
 
     if (!token) {
         return res.status(401).json({
@@ -22,6 +21,7 @@ export const verifyJWT = async (req, res, next) => {
     try {
         const decoded = jwt.verify(token, ACCESS_TOKEN_SECRET);
         req.id = decoded.userId;
+        
         next();
     } catch (err) {
         return res.status(403).json({
@@ -29,6 +29,5 @@ export const verifyJWT = async (req, res, next) => {
             message: "Invalid or expired token",
         });
     }
-
 }
 

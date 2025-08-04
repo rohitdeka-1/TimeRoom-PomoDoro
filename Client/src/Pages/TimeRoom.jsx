@@ -141,7 +141,7 @@ const TimeRoom = () => {
                         className={`px-4 py-2 rounded-xl font-semibold transition-all duration-200 ${
                           isFull
                             ? "bg-slate-600/50 text-slate-400 cursor-not-allowed"
-                            : "bg-white hover:bg-green-600 text-black shadow-lg hover:shadow-green-500/25"
+                            : "bg-white hover:bg-black hover:text-white text-black shadow-lg hover:shadow-white/35"
                         }`}
                         disabled={isFull}
                       >
